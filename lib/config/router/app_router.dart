@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
 import 'package:widgets_app/presentation/screens/theme_changer/new_changer_screen.dart';
@@ -72,6 +74,12 @@ final appRouter = GoRouter(
       name: ThemeChangerScreen.name,
       builder: (context, state) => const ThemeChangerScreen(),
     ),
-    
+
+   /* GoRoute(
+
+      path: '/optional changer',
+      name: ThemeChangerScreen.name,
+      builder: (context, state) => const ThemeChangerScreen(),
+    )*/
   ],
 );
